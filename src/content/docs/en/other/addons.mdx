@@ -1,0 +1,129 @@
+---
+title: Installing Additional Files
+description: Installing mods that are not included in the modpack.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside>Files that are not included in the modpack may sometimes be deleted when updating the modpack!</Aside>
+
+If you want to add other mods, resource packs or shader packs that are not in the modpack, 
+can you do so by downloading them from their website or installing them through your launcher.
+
+## How to install additional mods, resource packs or shader packs
+
+From the website that you are downloading the file, it should most likely save in your downloads folder,
+from there, you can copy it to the `.minecraft\mods|resourcepacks|shaderpacks` folder(s), where all the other files should be.
+If you are on Windows, this folder is usually located in your `%appdata%` folder. (unless you manually
+altered the location). Below you can see where your .minecraft folder is located for your launcher:
+
+import { FileTree } from '@astrojs/starlight/components';
+import { Icon } from '@astrojs/starlight/components';
+
+### Prism launcher
+
+- If you are on Prism Launcher, there should be a folder in `appdata\Roaming\PrismLauncher`.
+- You can get to this location by searching for **Run** in the search box, then typing **%appdata%**.
+
+The folder structure should look something like this:
+<FileTree>
+
+- Roaming
+  - PrismLauncher
+    - instances
+      - KalSMP //If you changed the name, select that instance//
+        - minecraft
+          - mods //Place your mod here//
+            - **yourmod.jar**
+            - mod1.jar
+            - mods2.jar
+          - resourcepacks //Place your resource pack here//
+            - **yourresourcepack.zip**
+            - resourcepack1.zip
+            - resourcepack2.zip
+          - shaderpacks
+            - **yourshaderpack.zip** //Place your shader pack here//
+            - shaderpack1.zip
+            - shaderpack2.zip
+
+</FileTree>
+
+### CurseForge
+
+- If you are on CurseForge, there should be a folder in `UserFolder\curseforge`.
+- You can get to this location by going to `C:\Users\UserFolder\`.
+
+The folder structure should look something like this:
+<FileTree>
+
+- UserFolder
+  - curseforge
+    - minecraft 
+      - instances
+        - KalSMP //If you changed the name, select that instance//
+          - mods //Place your mod here//
+            - **yourmod.jar**
+            - mod1.jar
+            - mods2.jar
+          - resourcepacks //Place your resource pack here//
+            - **yourresourcepack.zip**
+            - resourcepack1.zip
+            - resourcepack2.zip
+          - shaderpacks
+            - **yourshaderpack.zip** //Place your shader pack here//
+            - shaderpack1.zip
+            - shaderpack2.zip
+
+</FileTree>
+
+### ATLauncher
+- If you are on ATLauncher, there should be a folder in `appdata\Roaming\ATLauncher`.
+- You can get to this location by searching for Run in the search box, then typing **%appdata%**.
+
+The folder structure should look something like this:
+<FileTree>
+
+- Roaming
+  - ATLauncher
+    - instances
+      - KalSMP //If you changed the name, select that instance//
+        - mods //Place your mod here//
+          - **yourmod.jar**
+            - mod1.jar
+            - mods2.jar
+          - resourcepacks //Place your resource pack here//
+            - **yourresourcepack.zip**
+            - resourcepack1.zip
+            - resourcepack2.zip
+          - shaderpacks
+            - **yourshaderpack.zip** //Place your shader pack here//
+            - shaderpack1.zip
+            - shaderpack2.zip
+
+</FileTree>
+
+### Other Launchers
+
+For other launchers there could be a different location where the modpack files are stored,
+You can first check in the `.minecraft` folder in `appdata\Roaming`. If it is not there,
+try going to your launchers website for more information.
+
+The folder structure for the `.minecraft` folder should look something like this:
+<FileTree>
+
+- Roaming
+  - .minecraft
+    - mods //Place your mod here//
+      - **yourmod.jar**
+      - mod1.jar
+      - mods2.jar
+    - resourcepacks //Place your resource pack here//
+      - **yourresourcepack.zip**
+      - resourcepack1.zip
+      - resourcepack2.zip
+    - shaderpacks
+      - **yourshaderpack.zip** //Place your shader pack here//
+      - shaderpack1.zip
+      - shaderpack2.zip
+
+</FileTree>
